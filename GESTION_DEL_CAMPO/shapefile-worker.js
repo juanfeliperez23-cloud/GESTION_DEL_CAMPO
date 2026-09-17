@@ -1,0 +1,2 @@
+importScripts('./vendor/shp-6.2.0.js');
+self.onmessage=async({data})=>{try{try{new DecompressionStream('deflate-raw');}catch{throw Error('Actualiza el navegador para leer ZIP, o carga el GeoJSON desde un computador actualizado.');}const result=await self.shp(data);if(Array.isArray(result))throw Error('Incluye una sola capa en el ZIP.');if(result?.type!=='FeatureCollection')throw Error('No se encontró una capa de polígonos.');self.postMessage({result});}catch(e){self.postMessage({error:e.message||'Shapefile no válido.'});}};
