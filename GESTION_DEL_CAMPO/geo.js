@@ -1,5 +1,0 @@
-export const distance=(a,b)=>{const R=6371008.8,r=Math.PI/180,p=(b.lat-a.lat)*r,q=(b.lng-a.lng)*r;return 2*R*Math.asin(Math.min(1,Math.sqrt(Math.sin(p/2)**2+Math.cos(a.lat*r)*Math.cos(b.lat*r)*Math.sin(q/2)**2)));};
-export function insideRing(lng,lat,ring){let c=false;for(let i=0,j=ring.length-1;i<ring.length;j=i++){const a=ring[i],b=ring[j];if((a[1]>lat)!=(b[1]>lat)&&lng<(b[0]-a[0])*(lat-a[1])/(b[1]-a[1])+a[0])c=!c;}return c;}
-export function contains(feature,lng,lat){const b=feature.bbox;if(b&&(lng<b[0]||lng>b[2]||lat<b[1]||lat>b[3]))return false;return feature.geometry.coordinates.some(poly=>insideRing(lng,lat,poly[0])&&!poly.slice(1).some(r=>insideRing(lng,lat,r)));}
-export function acceptPoint(previous,p){if(!Number.isFinite(p.acc)||p.acc>50||p.acc<0)return false;if(!previous)return true;const seconds=(p.time-previous.time)/1000;if(seconds<3)return false;const d=distance(previous,p);if(d/seconds>45)return false;return d>=Math.max(5,Math.min(15,p.acc*.4));}
-export const normalize=s=>String(s??'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().trim();

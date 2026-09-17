@@ -1,5 +1,0 @@
-// Lista explícita: los campos futuros no se publican automáticamente a finca.
-const fields=['area','codHacienda','cortes','cosecha','distanciaIngenio','distanciaIngenioFuente','edad','grupoAbonos','grupoTenencia','hacienda','id','nombreGrupoAbonos','siembra','suelo','suerte','surcos','tch','topografia','variedad','vulnerabilidad','zona'];
-const metadata=['fichasSource','fichasCorte','fichasArchivo','fichasActualizado','laboresSource','laboresArchivo','laboresActualizado','laboresDesde','laboresHasta','rows','unmatched','uniqueMatched','duplicateMatched','abonosMissing','updatedAt'];
-const select=(o,keys)=>Object.fromEntries(keys.filter(k=>Object.hasOwn(o||{},k)).map(k=>[k,o[k]]));
-export function operationalData(data){if(data?.schema!=='mayaguez-datos-v1')throw Error('Base incompatible.');return {schema:data.schema,accessScope:'operativo-v1',properties:Object.fromEntries(Object.entries(data.properties||{}).map(([id,p])=>[id,select(p,fields)])),jobs:data.jobs||{},...(data.lara?{lara:data.lara}:{}),meta:select(data.meta,metadata)};}
