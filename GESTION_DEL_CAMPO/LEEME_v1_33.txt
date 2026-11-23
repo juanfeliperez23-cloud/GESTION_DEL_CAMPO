@@ -1,0 +1,16 @@
+GESTIÓN DEL CAMPO v1.33
+1. GitHub: reemplazar todo el contenido en la misma carpeta donde está index.html. Este ZIP solo contiene aplicación, sin bases de empresa.
+2. Supabase: en Storage > campo-privado, reemplazar datos-campo.json y datos-operativos.json por los del ZIP PRIVADO. Conservar los demás archivos. Estas bases parten de los archivos aportados el 23/11/2026: si publicaste bases más nuevas, usa la importación de Ensayos de la app para no retroceder esas actualizaciones.
+3. Abrir con internet > Buscar actualización > cerrar y abrir > verificar v1.33.
+4. Preparar para campo > esperar Descarga completa. Cerrar y reabrir la app con modo avión para comprobar el equipo. No borrar datos del navegador ni desinstalar.
+ENSAYOS
+Activar Ensayos en el mapa. Filtrar por tipo y tocar una suerte para ver todos sus registros coincidentes. El Excel no tiene geometrías internas: se destaca toda la suerte, no el área efectiva del experimento. Se conservan las cinco columnas del archivo.
+134 registros; 117 cruzan con 116 suertes del mapa aportado; 17 sin cruce, visibles en el panel.
+Actualizaciones futuras: como administrador conectado, Ensayos > Actualizar Excel de ensayos. Si estás usando la copia de campo, usa primero Conectar para actualizar bases. La importación publica las bases principal y operativa y renueva la copia local.
+ESTABILIDAD
+Eliminadas las recargas automáticas tras descargar las bases y al regresar desde una página suspendida.
+Verificación de acceso espaciada a cinco minutos; descarga de bases automática como máximo cada hora durante esta apertura, sin interrumpir medición o recorrido. Las descargas concurrentes comparten una sola operación.
+Una falla de red no elimina la copia. La desautorización confirmada sí bloquea el acceso.
+Las bases y la sesión guardada se conservan sin vencimiento local programado. El sistema operativo puede suspender o eliminar datos del navegador; no se puede garantizar almacenamiento perpetuo.
+VALIDACIÓN
+Pruebas de lógica de recarga, conservación ante error de red, bloqueo ante denegación, cruce de ensayos, preservación de bases y sintaxis. Falta validar en el teléfono real.

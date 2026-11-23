@@ -1,0 +1,6 @@
+COMPOST Y MEDICIÓN — v1.33
+Botón Compost visible junto a los controles del mapa. Abre el cálculo y permite elegir Compost o Mayavín.
+Para medir: pulsa regla, marca al menos tres esquinas sobre el mapa y pulsa Terminar. Solo entonces aparece el formulario de semilla. Nueva medición limpia el contorno. Al cerrar y reabrir la regla puedes continuar agregando puntos al contorno existente.
+Se corrigió el límite de altura del panel en celulares y el bloqueo de puntos al reabrir una medición terminada.
+Instala TODO el contenido del ZIP en la MISMA carpeta de GitHub donde está index.html, sin carpeta anidada. No cambies Supabase ni borres datos del navegador. Con internet pulsa Buscar actualización, cierra las ventanas de la app y vuelve a abrir; verifica v1.33. Pulsa Preparar para campo.
+Comprobaciones: sintaxis y simulación de eventos para marcar puntos, terminar, calcular semilla, cerrar/reabrir y nueva medición. No se ha probado en tu celular. Si no aparece v1.33, continúa cargando una versión anterior; no borres el almacenamiento, ya que contiene registros locales.

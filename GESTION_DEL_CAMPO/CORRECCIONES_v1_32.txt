@@ -1,0 +1,3 @@
+Gestión del Campo v1.33
+Regla: al abrir o pulsar Nueva medición, queda únicamente una barra compacta para dibujar en el mapa. Marca mínimo 3 puntos y pulsa Terminar: se abre el cálculo de semilla. Volver al mapa permite ajustar puntos. Nueva medición borra el contorno anterior.
+Sube todo el contenido a la misma carpeta de GitHub donde está index.html. Buscar actualización, cerrar y abrir, verificar v1.33. No borrar almacenamiento del navegador. No requiere cambiar Supabase. Conserva la preparación automática offline existente; espera su confirmación antes de salir sin señal.
