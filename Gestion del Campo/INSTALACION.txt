@@ -1,0 +1,19 @@
+GESTIÓN DEL CAMPO v1.30
+Este ZIP contiene exclusivamente los archivos publicables de la aplicación. Las bases privadas permanecen en Supabase; no se incluyen ni se actualizan mediante este ZIP.
+
+1. Respalda el repositorio y exporta los hallazgos/recorridos de la app.
+2. Descomprime el ZIP. Reemplaza el contenido de LA MISMA carpeta que actualmente contiene index.html con TODO el contenido extraído. index.html debe quedar directamente allí, sin una carpeta adicional. Conserva el repositorio y la dirección actuales para mantener acceso al almacenamiento del navegador. No elimines el bucket ni sus archivos.
+3. Espera la publicación de GitHub Pages. Abre con señal y pulsa Buscar actualización; cierra y vuelve a abrir. Comprueba v1.30.
+4. Inicia sesión si hace falta. Pulsa Preparar para campo y espera a que termine. Hazlo en cada equipo. Comprueba apertura en modo avión antes de salir. No borres los datos del navegador.
+
+SEMILLA
+Selecciona una suerte para tomar su distancia entre surcos del Cronológico, abre Medir y marca las esquinas del tablón. Pulsa Terminar. Introduce bandereo en metros y revisa la distancia entre surcos; ambos son editables. Se recalcula al ajustar los vértices o los valores.
+Paquetes = redondear hacia arriba [área m² / (entre surcos m × bandereo m)]. Trozos = paquetes × 30.
+Ejemplo: 1 ha, entre surcos 1,50 m y bandereo 10 m: 667 paquetes, 20.010 trozos.
+Es una estimación por área neta: excluye caminos, canales y áreas no sembrables del polígono. No reconstruye filas ni redondea cada surco, y no añade porcentaje de reserva. El resultado permanece en la medición abierta; no se guarda como registro de siembra.
+
+SIN CONEXIÓN
+Los archivos de la app se sirven primero desde la copia local. La sesión y las bases siguen usando el almacenamiento protegido existente, sin vencimiento local automático. Una conexión débil no retrasa la lectura de archivos ya guardados. La primera instalación y preparación requieren internet. Una copia borrada por el usuario o el navegador debe descargarse de nuevo. Los mapas de fondo no descargados, clima e índices nuevos requieren internet; los polígonos y fichas descargados pueden consultarse sin él.
+
+VALIDACIÓN
+Probados el cálculo de paquetes, trozos, valores inválidos y el servicio de archivos cacheados sin acceso a red. Revisada sintaxis de los archivos modificados. Falta validar la instalación y apertura real en tu teléfono; no se ha publicado automáticamente ni se garantiza que el navegador nunca elimine su almacenamiento.
